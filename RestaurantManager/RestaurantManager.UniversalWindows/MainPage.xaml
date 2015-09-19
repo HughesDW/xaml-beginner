@@ -34,6 +34,7 @@
             Text="Internal Test Version"
             HorizontalAlignment="Center"
             VerticalAlignment="Bottom"
+            FontSize="16"
             />
 
         <TextBlock
@@ -42,6 +43,7 @@
             Text="**Go to Orders View**"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
+            TextWrapping="WrapWholeWords"
             />
         
         <TextBlock
@@ -50,6 +52,8 @@
             Text="**Submit Order**"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
+            TextWrapping="WrapWholeWords"
+
             />
         
         
