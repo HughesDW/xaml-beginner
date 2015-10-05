@@ -7,6 +7,16 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <Page.TopAppBar>
+        <AppBar>
+            <AppBarButton 
+                Icon="Home"
+                Content="Home"
+                Click="AppBarHomeButton_Click"
+                />
+        </AppBar>
+    </Page.TopAppBar>
+    
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <Grid.ColumnDefinitions>
@@ -28,13 +38,13 @@
             Grid.Row="1"
             Grid.RowSpan="3"
             Grid.Column="0"
-            Margin="10"
+            Margin="10" 
             />
         
         <ListView
             Grid.Row="2"
             Grid.RowSpan="2"
-            Grid.Column="2" Background="#FF8B4040"
+            Grid.Column="2" 
             Margin="10"
             />
         
