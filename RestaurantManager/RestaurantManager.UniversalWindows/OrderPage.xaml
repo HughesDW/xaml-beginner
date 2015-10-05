@@ -12,6 +12,7 @@
             <AppBarButton 
                 Icon="Home"
                 Content="Home"
+                Label="Home"
                 Click="AppBarHomeButton_Click"
                 />
         </AppBar>
