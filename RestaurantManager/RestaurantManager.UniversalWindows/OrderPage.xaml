@@ -24,12 +24,27 @@
 
         </Grid.RowDefinitions>
 
+        <ListView
+            Grid.Row="1"
+            Grid.RowSpan="3"
+            Grid.Column="0"
+            Margin="10"
+            />
+        
+        <ListView
+            Grid.Row="2"
+            Grid.RowSpan="2"
+            Grid.Column="2" Background="#FF8B4040"
+            Margin="10"
+            />
+        
         <TextBlock
             Grid.Row="1" 
             Grid.Column="1"
             Text="Special Requests:"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
+            TextWrapping="WrapWholeWords"
             />
 
         <TextBlock
@@ -38,21 +53,24 @@
             Text="Order Items:"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
+            TextWrapping="WrapWholeWords"
             />
 
-        <TextBlock
+        <Button
+            x:Name="AddOrderButton"
             Grid.Row="4" 
             Grid.Column="0"
-            Text="**Add to Order**"
+            Content="Add to Order"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             />
 
-        <TextBlock
+        <Button
+            x:Name="SubmitOrderButton"
             Grid.Row="4" 
             Grid.Column="1"
             Grid.ColumnSpan="2"
-            Text="**Submit Order**"
+            Content="Submit Order"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             />
