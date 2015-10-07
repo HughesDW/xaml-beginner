@@ -34,7 +34,7 @@
             Text="Internal Test Version"
             HorizontalAlignment="Center"
             VerticalAlignment="Bottom"
-            FontSize="16"
+            FontSize="18"
             />
 
         <Button 
