@@ -19,10 +19,6 @@
         </AppBar>
     </Page.TopAppBar>
 
-    <Page.DataContext>
-        <Models:DataManager />
-    </Page.DataContext>
-    
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <Grid.ColumnDefinitions>
@@ -46,7 +42,7 @@
             Grid.RowSpan="3"
             Grid.Column="0"
             Margin="10" 
-            ItemsSource="{Binding MenuItems}"
+            ItemsSource="{Binding MenuItems, Source={StaticResource DataManager}}"
             />
         
         <ListView
@@ -55,7 +51,7 @@
             Grid.RowSpan="2"
             Grid.Column="2" 
             Margin="10"
-            ItemsSource="{Binding CurrentlySelectedMenuItems}"
+            ItemsSource="{Binding CurrentlySelectedMenuItems, Source={StaticResource DataManager}}"
             />
         
         <TextBlock

@@ -19,10 +19,6 @@
         </AppBar>
     </Page.TopAppBar>
 
-    <Page.DataContext>
-        <Models:DataManager />
-    </Page.DataContext>
-
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <Grid.RowDefinitions>
@@ -30,8 +26,8 @@
             <RowDefinition Height="0.1*" />
         </Grid.RowDefinitions>
 
-        <GridView x:Name="OrderGridView" ItemsSource="{Binding OrderItems}" />
-
+        <GridView x:Name="OrderGridView" 
+                  ItemsSource="{Binding OrderItems, Source={StaticResource DataManager}}" />
 
         <Button
 			x:Name="ClearOrderButton"
