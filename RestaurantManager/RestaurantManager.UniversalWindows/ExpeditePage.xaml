@@ -8,17 +8,6 @@
     x:Class="RestaurantManager.UniversalWindows.ExpeditePage"
     mc:Ignorable="d">
 
-    <Page.TopAppBar>
-        <AppBar>
-            <AppBarButton 
-                Icon="Home"
-                Content="Home"
-                Label="Home"
-                Click="AppBarHomeButton_Click"
-                />
-        </AppBar>
-    </Page.TopAppBar>
-
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <Grid.RowDefinitions>
@@ -26,8 +15,19 @@
             <RowDefinition Height="0.1*" />
         </Grid.RowDefinitions>
 
-        <GridView x:Name="OrderGridView" 
-                  ItemsSource="{Binding OrderItems, Source={StaticResource DataManager}}" />
+        <StackPanel>
+            <AppBar>
+                <AppBarButton 
+                    x:Name="AppBarHomeButton"
+                    Icon="Home"
+                    Content="Home"
+                    Label="Home"
+                    Click="AppBarHomeButton_Click" 
+                    />
+            </AppBar>
+            <GridView x:Name="OrderGridView" 
+                      ItemsSource="{Binding OrderItems, Source={StaticResource DataManager}}" />
+        </StackPanel>
 
         <Button
 			x:Name="ClearOrderButton"

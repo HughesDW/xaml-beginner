@@ -8,16 +8,6 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Page.TopAppBar>
-        <AppBar>
-            <AppBarButton 
-                Icon="Home"
-                Content="Home"
-                Label="Home"
-                Click="AppBarHomeButton_Click"
-                />
-        </AppBar>
-    </Page.TopAppBar>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
@@ -36,6 +26,16 @@
 
         </Grid.RowDefinitions>
 
+        <AppBar Grid.ColumnSpan="3">
+            <AppBarButton 
+                x:Name="AppBarHomeButton"
+                Icon="Home"
+                Content="Home"
+                Label="Home"
+                Click="AppBarHomeButton_Click"
+                />
+        </AppBar>
+        
         <ListView
             x:Name="MenuItemList"
             Grid.Row="1"
